@@ -1,0 +1,41 @@
+{
+  "name": "treasury-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "debug:listings": "tsx src/debug/listings.ts",
+    "debug:fulfillment": "tsx src/debug/fulfillment.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "@opensea/seaport-js": "^4.0.5",
+    "better-sqlite3": "^9.0.0",
+    "@opensea/seaport-order-validator": "^0.1.1",
+    "ethers": "^6.10.0",
+    "opensea-js": "^7.3.2",
+    "@ethersproject/providers": "^5.8.0",
+    "pino": "^8.18.0",
+    "viem": "^1.21.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/better-sqlite3": "^7.6.7",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
+}
